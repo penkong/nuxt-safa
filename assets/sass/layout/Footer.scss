@@ -1,0 +1,29 @@
+.footer {
+    height: 4rem;
+    width: 100vw;
+    background-image: linear-gradient(to right, #026ea0, #016593, #005d87, #00547b, #004c6f, #004c6f, #004c6f, #004c6f, #00547b, #005d87, #016593, #026ea0);
+    // background-image: linear-gradient(to right, #004444, #014848, #024c4c, #035151, #055555, #055555, #055555, #055555, #035151, #024c4c, #014848, #004444);
+    color: white;
+    border: none;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-left: auto;
+        margin-right: 2rem;
+        margin-top: .55rem;
+
+        li {
+            margin: 0 1rem;
+            font-size: 1.3rem;
+            font-weight: 100 !important;
+            padding: .5rem .8rem;
+            transition: all .2s ease-in;
+            &:hover {
+                color: #042523;
+                background: white;
+            }
+        }
+    }
+}

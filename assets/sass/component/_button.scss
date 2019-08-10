@@ -1,0 +1,107 @@
+@import '../abstract/variables';
+.btn {
+  background: rgb(10, 80, 138);
+  color: white;
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+    border-radius: 3rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-0.09rem) scale(1.02);
+    box-shadow: 0 0.5rem 0.2rem $color-shadow-btn-hover;
+    background: rgb(6, 110, 196);
+
+    &:after {
+      transform: scaleX(1.4) scaleY(1.5);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-0.05rem) scale(0.99);
+    box-shadow: 0 0.65rem 0.05rem $color-shadow-btn-active;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-btn--white;
+    letter-spacing: 0.4rem;
+    font-weight: 600;
+    box-shadow: 0 0.3rem 0.05rem $color-shadow-btn-white;
+
+    &::after {
+      background-color: $color-btn--white-after;
+    }
+  }
+
+  &--green {
+    background-color: rgb(6, 110, 196);
+    color: $color-white;
+    // letter-spacing: 0.4rem;
+    font-weight: 400;
+    box-shadow: 0 0.3rem 0.05rem $color-shadow-btn-white;
+
+    &::after {
+      background-color: $color-btn--white-after;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.6s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.7s ease-out 0.4s;
+    /* style of anime implement before it happen opacity 0 */
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    color: rgb(11, 196, 171);
+    font-size: 2rem;
+    font-weight: 500;
+    display: inline-block;
+
+    text-decoration: none;
+    border-bottom: 0.3rem solid $color-primary-dark;
+    padding: 1rem;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: rgb(11, 196, 171);
+    color: white;
+    box-shadow: 0 0.3rem 0.05rem $color-shadow-btn-white;
+    transform: translateY(-0.2rem);
+  }
+
+  &:active {
+    box-shadow: 0 0.4rem 0.5rem $color-shadow-btn-white;
+    transform: translateY(0);
+  }
+}
