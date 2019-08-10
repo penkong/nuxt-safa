@@ -24,6 +24,8 @@ export default {
 .footer {
   height: 3.5rem;
   width: 100vw;
+  z-index: 2;
+  clear: both;
   background-image: linear-gradient(
     to right,
     #026ea0,
