@@ -17,6 +17,35 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @import "@/assets/sass/abstract/mixins.scss";
-// @import "@/assets/sass/component/content.scss";
+.content {
+  height: auto;
+  width: 100vw;
+  background-image: linear-gradient(
+    to right top,
+    #085353,
+    #085656,
+    #085959,
+    #075d5d,
+    #076060,
+    #00656c,
+    #006a77,
+    #006f83,
+    #00769b,
+    #007bb5,
+    #007ecd,
+    #327ee0
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .free-fix:first-child {
+    margin-top: 3.5rem;
+  }
+  .free-fix:last-child {
+    margin-bottom: 3rem;
+  }
+}
 </style>
