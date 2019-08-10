@@ -28,6 +28,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../../sass/abstract/mixins";
-@import "../../sass/pages/Home";
+@import "~assets/sass/abstract/mixins";
+@import "~assets/sass/pages/Home";
 </style>

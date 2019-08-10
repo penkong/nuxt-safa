@@ -11,6 +11,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../sass/abstract/mixins";
-@import "Card";
+@import "~assets/sass/abstract/mixins";
+@import "~assets/sass/component/Card";
 </style>

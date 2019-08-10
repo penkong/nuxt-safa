@@ -18,6 +18,6 @@ export default {
 
 
 <style scoped lang="scss">
-@import "../../sass/abstract/mixins";
-@import "../../sass/component/content";
+@import "~assets/sass/abstract/mixins";
+@import "~assets/sass/component/content";
 </style>

@@ -26,7 +26,7 @@
 <script>
 import firebase from "firebase/app";
 export default {
-  name: "Header",
+  name: "TheHeader",
   data() {
     return {
       user: null
@@ -57,6 +57,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "../../sass/abstract/mixins";
-@import "../../sass/layout/Header";
+@import "~assets/sass/abstract/mixins";
+@import "~assets/sass/layout/Header";
 </style>

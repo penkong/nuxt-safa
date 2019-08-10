@@ -23,6 +23,9 @@ async function start () {
 
   // Give nuxt middleware to express
   app.use(nuxt.render)
+  // routes on :
+  // require('./routes/authRoutes')(app);
+
 
   // Listen the server
   app.listen(port, host)

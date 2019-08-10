@@ -78,10 +78,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../../sass/abstract/mixins";
-@import "../../sass/component/sign";
-@import "../../sass/component/log-card";
-@import "../../sass/component/button";
+@import "~assets/sass/abstract/mixins";
+@import "~assets/sass/component/sign";
+@import "~assets/sass/component/log-card";
+@import "~assets/sass/component/button";
 .btn {
   &,
   &:link,
