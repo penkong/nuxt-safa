@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import BigCard from "../../components/BigCard/BigCard";
+import BigCard from "@/components/BigCard/BigCard";
 export default {
   name: "About",
   components: {
@@ -18,6 +18,6 @@ export default {
 
 
 <style scoped lang="scss">
-@import "~assets/sass/abstract/mixins";
-@import "~assets/sass/component/content";
+// @import "@/assets/sass/abstract/mixins.scss";
+// @import "@/assets/sass/component/content.scss";
 </style>

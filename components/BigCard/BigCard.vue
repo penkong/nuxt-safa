@@ -12,6 +12,6 @@ export default {
 
 
 <style scoped lang="scss">
-@import "~assets/sass/abstract/mixins";
-@import "~assets/sass/component/BigCard";
+// @import "~assets/sass/abstract/mixins";
+// @import "~assets/sass/component/BigCard";
 </style>

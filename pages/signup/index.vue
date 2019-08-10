@@ -25,7 +25,7 @@
 <script>
 // @ is an alias to /src
 import firebase from "firebase/app";
-import db from "../../api/firebase/init";
+import { db } from "@/plugins/firebase";
 
 export default {
   name: "Signup",
@@ -78,10 +78,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "~assets/sass/abstract/mixins";
-@import "~assets/sass/component/sign";
-@import "~assets/sass/component/log-card";
-@import "~assets/sass/component/button";
+// @import "@/assets/sass/abstract/mixins.scss";
+// @import "@/assets/sass/component/sign.scss";
+// @import "@/assets/sass/component/log-card.scss";
+// @import "@/assets/sass/component/button.scss";
 .btn {
   &,
   &:link,

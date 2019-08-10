@@ -15,8 +15,8 @@
 
 <script>
 // @ is an alias to /src
-import Card from "../../components/Card/Card";
-import BigCard from "../../components/BigCard/BigCard";
+import Card from "@/components/Card/Card";
+import BigCard from "@/components/BigCard/BigCard";
 
 export default {
   name: "Home",
@@ -28,6 +28,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "~assets/sass/abstract/mixins";
-@import "~assets/sass/pages/Home";
+// @import "@/assets/sass/abstract/mixins.scss";
+// @import "@/assets/sass/pages/Home.scss";
 </style>

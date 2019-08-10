@@ -22,12 +22,16 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: ['~assets/sass/main.scss'],
+  styleResources: {
+    scss: ['~assets/sass/main.scss']
+  },
+  
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/firebase.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -39,6 +43,7 @@ module.exports = {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/style-resources',
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
   ],

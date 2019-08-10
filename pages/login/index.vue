@@ -57,8 +57,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/sass/abstract/mixins";
-@import "~assets/sass/component/sign";
-@import "~assets/sass/component/log-card";
-@import "~assets/sass/component/button";
+// @import "@/assets/sass/abstract/mixins.scss";
+// @import "@/assets/sass/component/sign.scss";
+// @import "@/assets/sass/component/log-card.scss";
+// @import "@/assets/sass/component/button.scss";
 </style>
