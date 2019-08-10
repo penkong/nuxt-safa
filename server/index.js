@@ -21,12 +21,12 @@ async function start () {
     await nuxt.ready()
   }
 
-  // Give nuxt middleware to express
-  app.use(nuxt.render)
   // routes on :
   // require('./routes/authRoutes')(app);
-
-
+  
+  // let it be last
+  // Give nuxt middleware to express
+  app.use(nuxt.render)
   // Listen the server
   app.listen(port, host)
   consola.ready({

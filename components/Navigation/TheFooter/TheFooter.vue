@@ -16,12 +16,9 @@
 
 <script>
 export default {
-  name: "TheFooter",
-  components: {}
+  name: "TheFooter"
 };
 </script>
 
 <style lang="scss" scoped>
-// @import "~assets/sass/abstract/mixins";
-// @import "~assets/sass/layout/Footer";
 </style>
