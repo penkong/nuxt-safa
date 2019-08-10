@@ -24,11 +24,11 @@
 
 <script>
 // @ is an alias to /src
-import firebase from "firebase/app";
-import { db } from "@/plugins/firebase";
+// import firebase from "firebase/app";
+// import { db } from "@/plugins/firebase";
 
 export default {
-  name: "Signup",
+  // name: "Signup",
   components: {},
   data() {
     return {
@@ -40,38 +40,38 @@ export default {
   methods: {
     signup() {
       // it save in firebase Auth db diff from normal db
-      if (this.email && this.password) {
-        // .doc == find doc
-        let ref = db.collection("users").doc(this.email);
-        ref.get().then(doc => {
-          if (doc.exists) {
-            this.feedback = "this alias already exists";
-          } else {
-            // firebase package do auth process here
-            this.feedback = null;
-            firebase
-              .auth()
-              .createUserWithEmailAndPassword(this.email, this.password)
-              // it give us back cred obj back
-              .then(cred => {
-                console.log(cred.user);
-                ref.set({
-                  email: this.email,
-                  password: this.password,
-                  geolocation: null,
-                  user_id: cred.user.uid
-                });
-              })
-              .then(() => this.$router.push({ name: "UserLanding" }))
-              .catch(err => {
-                console.log(err);
-                this.feedback = err.message;
-              });
-          }
-        });
-      } else {
-        this.feedback = "You must enter all fields";
-      }
+      // if (this.email && this.password) {
+      //   // .doc == find doc
+      //   let ref = db.collection("users").doc(this.email);
+      //   ref.get().then(doc => {
+      //     if (doc.exists) {
+      //       this.feedback = "this alias already exists";
+      //     } else {
+      //       // firebase package do auth process here
+      //       this.feedback = null;
+      //       firebase
+      //         .auth()
+      //         .createUserWithEmailAndPassword(this.email, this.password)
+      //         // it give us back cred obj back
+      //         .then(cred => {
+      //           console.log(cred.user);
+      //           ref.set({
+      //             email: this.email,
+      //             password: this.password,
+      //             geolocation: null,
+      //             user_id: cred.user.uid
+      //           });
+      //         })
+      //         .then(() => this.$router.push({ name: "UserLanding" }))
+      //         .catch(err => {
+      //           console.log(err);
+      //           this.feedback = err.message;
+      //         });
+      //     }
+      //   });
+      // } else {
+      //   this.feedback = "You must enter all fields";
+      // }
     }
   }
 };

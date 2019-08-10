@@ -1,12 +1,12 @@
 <template>
   <nav class="header">
-    <router-link :to="{ name: 'Home' }" class="safa type1">SAFA RAYANEH</router-link>
+    <nuxt-link to="/" class="safa type1">SAFA RAYANEH</nuxt-link>
     <ul v-if="user">
       <li>
-        <router-link :to="{ name: 'UserLanding' }">Our Projects</router-link>
+        <nuxt-link to="/user-land">Our Projects</nuxt-link>
       </li>
       <li>
-        <router-link :to="{ name: 'About' }">About</router-link>
+        <nuxt-link to="/about">About</nuxt-link>
       </li>
       <li>
         <a class="item" @click="logout">logout</a>
@@ -14,17 +14,17 @@
     </ul>
     <ul v-else>
       <li>
-        <router-link :to="{ name: 'Signup' }">Signup</router-link>
+        <nuxt-link to="/signup">Signup</nuxt-link>
       </li>
       <li>
-        <router-link :to="{ name: 'Login' }">Login</router-link>
+        <nuxt-link to="/login">Login</nuxt-link>
       </li>
     </ul>
   </nav>
 </template>
 
 <script>
-import firebase from "firebase/app";
+// import firebase from "firebase/app";
 export default {
   name: "TheHeader",
   data() {
@@ -34,24 +34,24 @@ export default {
   },
   methods: {
     logout() {
-      firebase
-        .auth()
-        .signOut()
-        .then(() => {
-          this.$router.push({ name: "Login" });
-        });
+      // firebase
+      //   .auth()
+      //   .signOut()
+      //   .then(() => {
+      //     this.$router.push({ name: "Login" });
+      //   });
     }
-  },
-  created() {
-    let user = firebase.auth().currentUser;
-    firebase.auth().onAuthStateChanged(user => {
-      if (user) {
-        this.user = user;
-      } else {
-        this.user = null;
-      }
-    });
   }
+  // created() {
+  //   let user = firebase.auth().currentUser;
+  //   firebase.auth().onAuthStateChanged(user => {
+  //     if (user) {
+  //       this.user = user;
+  //     } else {
+  //       this.user = null;
+  //     }
+  //   });
+  // }
 };
 </script>
 

@@ -9,7 +9,7 @@
 <script>
 import BigCard from "@/components/BigCard/BigCard";
 export default {
-  name: "About",
+  // name: "About",
   components: {
     BigCard
   }

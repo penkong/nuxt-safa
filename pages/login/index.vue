@@ -22,10 +22,10 @@
 </template>
 
 <script>
-import firebase from "firebase/app";
+// import firebase from "firebase/app";
 
 export default {
-  name: "Login",
+  // name: "Login",
   props: ["isLoggedIn"],
   data() {
     return {
@@ -36,21 +36,21 @@ export default {
   },
   methods: {
     login() {
-      if (this.email && this.password) {
-        firebase
-          .auth()
-          .signInWithEmailAndPassword(this.email, this.password)
-          .then(cred => {
-            console.log(cred.user);
-            this.$router.push({ name: "UserLanding" });
-          })
-          .catch(err => {
-            this.feedback = err.message;
-          });
-        this.feedback = null;
-      } else {
-        this.feedback = "please fill both fields";
-      }
+      // if (this.email && this.password) {
+      //   firebase
+      //     .auth()
+      //     .signInWithEmailAndPassword(this.email, this.password)
+      //     .then(cred => {
+      //       console.log(cred.user);
+      //       this.$router.push({ name: "UserLanding" });
+      //     })
+      //     .catch(err => {
+      //       this.feedback = err.message;
+      //     });
+      //   this.feedback = null;
+      // } else {
+      //   this.feedback = "please fill both fields";
+      // }
     }
   }
 };

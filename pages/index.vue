@@ -19,7 +19,7 @@ import Card from "@/components/Card/Card";
 import BigCard from "@/components/BigCard/BigCard";
 
 export default {
-  name: "Home",
+  // name: "Home",
   components: {
     Card,
     BigCard
